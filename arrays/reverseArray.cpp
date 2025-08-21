@@ -5,17 +5,11 @@ void printArray(int arr[], int size){
         std::cout << arr[i] << " ";
     std::cout << std::endl;
 }
-void swap(int &a , int &b){
-    int temp;
-    temp = a;
-    a = b;
-    b = temp;
-}
 
 void reverseArray(int arr[],int size){
     int i = 0, j = size-1;
     while(i!=j) {
-         swap(arr[i],arr[j]);
+         std::swap(arr[i],arr[j]);
          i++;j--;
     }
 }
